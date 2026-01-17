@@ -264,6 +264,7 @@ transition: color .4s;
 
 
 
+
 /* Active link */
 
 
@@ -314,20 +315,22 @@ transition: color .4s;
 .home__scroll-box{
   background-color: var(--first-color);
   width: 32px;
+  height: 32px;
   display: grid;
   place-items: center;
   font-size: 1.5rem;
   overflow: hidden;
+  border-radius: 5px;
 }
 .home__scroll-text{
   font-weight: var(--font-semi-bold);
 }
 .home__scroll-box i{
-  animation: scroll-down;
+  animation: scroll-down ease-in-out 3s infinite;
 }
 
 /* Animate scroll icon */
-@keyframes scroll-dowm{
+@keyframes scroll-down{
   0%{
     transform: translateY(-1rem);
     opacity: 0;
@@ -343,16 +346,110 @@ transition: color .4s;
 }
 
 /*=============== BUTTON ===============*/
+.button{
+  display: inline-flex;
+  justify-content: center;
+  background-color: var(--first-color);
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  padding: 1.25rem 2rem;
+  transition: background-color .4s;
+  border-radius: 5px;
+}
 
+.button:hover{
+  background-color: var(--first-color-alt);
+}
 
 /*=============== WORKS ===============*/
+.work{
+  background-color: var(--container-color);
+}
+
+.work__card{
+  background-color: var(--first-color);
+}
+
+.work__link{
+  display: block;
+  position: relative;
+  background-color: var(--body-color);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  color: var(--text-color);
+  transition: transform .4s;
+}
+
+.work__title{
+  font-size: var(--h3-font-size);
+  margin-bottom: .75rem;
+}
+
+.work__description{
+  margin-bottom: 1.5rem;
+}
+
+.work__link i{
+  position:absolute;
+  top: 1.8rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--first-color-light);
+}
+
+.work__link:hover{
+  transform: translateY(-0.35rem);
+}
+
+.work__link:hover i{
+  transform: translateX(0.5rem);
+}
+
+
+
 
 
 /*=============== INFO ===============*/
+.info__container{
+  row-gap: 3rem;
+}
 
+.info__title{
+  position: relative;
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.info__title::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  width: 20px;
+  height: 2px;
+  background-color: var(--text-color);
+}
 
 /* ABOUT */
+.about{
+  row-gap: 3rem;
+}
 
+.about__description{
+  margin-bottom: 2rem;
+}
+
+.about__description b{
+  color: var(--first-color-light);
+}
+
+.about__img{
+  width: 250px;
+  justify-self: center;
+  mask-image: linear-gradient(to bottom, 
+              hsla(var(--hue), 40%, 16%) 60%,
+              transparent 100%);
+}
 
 /* EXPERIENCE */
 
