@@ -29,10 +29,11 @@
 
       <nav class="nav container">
         <a href="" class="nav__logo">Joao</a>
+
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li>
-              <a href="#home" class="nav__link">Home</a>
+              <a href="#home" class="nav__link active-link">Home</a>
             </li>
 
             <li>
@@ -314,7 +315,7 @@
       <section class="contact section" id="contact">
         <h2 class="section__title">CONTACT ME</h2>
 
-        <div class="contact__container coontainer grid">
+        <div class="contact__container container grid">
 
           <form action="" class="contact__form grid" id="contact-form">
 
@@ -351,15 +352,37 @@
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <ul class="footer__links">
+          <li>
+            <a href="#home" class="footer__link">Home</a>
+          </li>
+
+          <li>
+            <a href="#work" class="footer__link">Work</a>
+          </li>
+
+          <li>
+            <a href="#info" class="footer__link">Info</a>
+          </li>
+        </ul>
+
+        <span class="footer__copy">
+          &#169; All rights reserved by BryanJack1
+        </span>
+      </div>
+    </footer>
 
     <!--========== SCROLL UP ==========-->
-
+    <a href="" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
     <!--=============== SCROLLREVEAL ===============-->
     <script src="assets/js/scrollreveal.min.js"></script>
 
     <!--=============== EMAIL JS ===============-->
-
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
   </body>
